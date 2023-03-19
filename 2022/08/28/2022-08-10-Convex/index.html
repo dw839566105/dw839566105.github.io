@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Markdown is a lightweight markup language for creating formatted text using a plain-text editor, see here. This post refers to markdownguide and runoob. An online editor is here. The markdown cheat sh">
+  <meta name="description" content="LASSO is short for least absolute shrinkage and selection operator, which can be seen in wiki. The followings are some optimization python package, showing whether support LASSO and gpu.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown">
-<meta property="og:url" content="http://example.com/2023/01/28/2019-09-19-Markdown/index.html">
+<meta property="og:title" content="Preliminary Survey on LASSO Convex optimization">
+<meta property="og:url" content="http://example.com/2022/08/28/2022-08-10-Convex/index.html">
 <meta property="og:site_name" content="DW&#39;s blog">
-<meta property="og:description" content="Markdown is a lightweight markup language for creating formatted text using a plain-text editor, see here. This post refers to markdownguide and runoob. An online editor is here. The markdown cheat sh">
+<meta property="og:description" content="LASSO is short for least absolute shrinkage and selection operator, which can be seen in wiki. The followings are some optimization python package, showing whether support LASSO and gpu.">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-01-28T12:41:16.595Z">
-<meta property="article:modified_time" content="2023-03-11T08:18:31.557Z">
+<meta property="article:published_time" content="2022-08-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-03-11T08:18:05.062Z">
 <meta property="article:author" content="Wei Dou">
+<meta property="article:tag" content="Convex optimization">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2023/01/28/2019-09-19-Markdown/">
+<link rel="canonical" href="http://example.com/2022/08/28/2022-08-10-Convex/">
 
 
 <script id="page-configurations">
@@ -45,7 +46,7 @@
   };
 </script>
 
-  <title>Markdown | DW's blog</title>
+  <title>Preliminary Survey on LASSO Convex optimization | DW's blog</title>
   
 
 
@@ -160,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/28/2019-09-19-Markdown/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/28/2022-08-10-Convex/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -173,7 +174,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Markdown
+          Preliminary Survey on LASSO Convex optimization
         </h1>
 
         <div class="post-meta">
@@ -183,14 +184,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2023-01-28 20:41:16" itemprop="dateCreated datePublished" datetime="2023-01-28T20:41:16+08:00">2023-01-28</time>
+              <time title="Created: 2022-08-28 00:00:00" itemprop="dateCreated datePublished" datetime="2022-08-28T00:00:00+08:00">2022-08-28</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-03-11 16:18:31" itemprop="dateModified" datetime="2023-03-11T16:18:31+08:00">2023-03-11</time>
+                <time title="Modified: 2023-03-11 16:18:05" itemprop="dateModified" datetime="2023-03-11T16:18:05+08:00">2023-03-11</time>
               </span>
 
           
@@ -204,12 +205,56 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Markdown is a lightweight markup language for creating formatted text using a plain-text editor, see <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Markdown">here</a>.</p>
-<p>This post refers to <a href="www.markdownguide.org">markdownguide</a> and <a target="_blank" rel="noopener" href="https://www.runoob.com/">runoob</a>. An online editor is <a target="_blank" rel="noopener" href="https://c.runoob.com/front-end/712">here</a>.</p>
-<p>The markdown cheat sheet is taken from <a target="_blank" rel="noopener" href="https://www.markdownguide.org/cheat-sheet/">markdownguide</a>.</p>
+        <p>LASSO is short for <em>least absolute shrinkage and selection operator</em>, which can be seen in <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Lasso_(statistics)">wiki</a>. The followings are some optimization python package, showing whether support LASSO and gpu.</p>
 <span id="more"></span> 
+<h3 id="Sklearn"><a href="#Sklearn" class="headerlink" title="Sklearn"></a>Sklearn</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html">support LASSO in linear regression</a></li>
+<li><a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.PoissonRegressor.html">support Poisson regressor</a></li>
+<li><strong>NOT</strong> support LASSO in Poisson regressor, some related issues <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/scikit-learn/scikit-learn/issues/22289">Add Lasso regularization to PoissonRegressor</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/scikit-learn/scikit-learn/issues/16637">Add L1 penalty and coordinate descent solver to TweedieRegression</a><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/scikit-learn/scikit-learn/pull/9405">benchmarks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>NOT</strong> support GPU</li>
+</ul>
+<h3 id="Statsmodel"><a href="#Statsmodel" class="headerlink" title="Statsmodel"></a>Statsmodel</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.statsmodels.org/devel/generated/statsmodels.discrete.discrete_model.Poisson.fit_regularized.html">support LASSO in Poisson regressor</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.statsmodels.org/dev/generated/statsmodels.genmod.families.family.Poisson.html">support sqrt link function?</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/statsmodels/statsmodels/issues/6439"><strong>NOT</strong> support GPU</a></li>
+</ul>
+<h3 id="H2O"><a href="#H2O" class="headerlink" title="H2O"></a>H2O</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/modeling.html">support LASSO in Poisson regressor</a><ul>
+<li>support lambda search</li>
+</ul>
+</li>
+</ul>
+<h3 id="H2O4GPU"><a href="#H2O4GPU" class="headerlink" title="H2O4GPU"></a>H2O4GPU</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/h2oai/h2o4gpu/blob/master/README.md">using sklearn api</a><ul>
+<li><code>import h2o4gpu as sklearn</code></li>
+<li>install trouble, only support python3.6?</li>
+</ul>
+</li>
+</ul>
+<h3 id="CVXPY"><a href="#CVXPY" class="headerlink" title="CVXPY"></a>CVXPY</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.cvxpy.org/examples/machine_learning/lasso_regression.html">support LASSO</a></li>
+<li>construct Poisson regression following DCP rules   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def loss_fn(X, Y, beta):</span><br><span class="line">    lbd = X @ beta</span><br><span class="line">    return cp.sum(cp.exp(lbd) - cp.multiply(Y, lbd))</span><br><span class="line"></span><br><span class="line">def regularizer(beta):</span><br><span class="line">    return cp.norm1(beta)</span><br><span class="line"></span><br><span class="line">def objective_fn(X, Y, beta, lambd):</span><br><span class="line">    return loss_fn(X, Y, beta) + lambd * regularizer(beta)</span><br><span class="line"></span><br><span class="line">def mse(X, Y, beta):</span><br><span class="line">    return (1.0 / X.shape[0]) * loss_fn(X, Y, beta).value</span><br></pre></td></tr></table></figure></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/cvxpy/cvxpy/issues/902">on GPU depend on the solver</a></li>
+</ul>
+<h3 id="glmnet"><a href="#glmnet" class="headerlink" title="glmnet"></a>glmnet</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://glmnet-python.readthedocs.io/en/latest/glmnet_vignette.html#Poisson-Models">support LASSO in Poisson Models</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jeffwong/cudaglmnet">gpu on R</a></li>
+</ul>
+<h3 id="Not-support-LASSO"><a href="#Not-support-LASSO" class="headerlink" title="Not support LASSO?"></a>Not support LASSO?</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://esa.github.io/pygmo2/tutorials/tutorials.html">PYGMO</a></li>
+<li><a target="_blank" rel="noopener" href="https://nlopt.readthedocs.io/en/latest/NLopt_Algorithms/">NLOPT</a><ul>
+<li><a target="_blank" rel="noopener" href="https://nlopt-discuss.ab-initio.mit.narkive.com/MdNYxlKN/l-bfgs-to-minimize-functions-regularized-with-l1-norm">robust optimization hint</a></li>
+</ul>
+</li>
+</ul>
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28151024&auto=1&height=66"></iframe>
     </div>
 
     
@@ -217,6 +262,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Convex-optimization/" rel="tag"># Convex optimization</a>
+          </div>
 
         
 
@@ -224,12 +272,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/08/28/2022-11-14-GitHub/" rel="prev" title="Github cheetsheet">
-      <i class="fa fa-chevron-left"></i> Github cheetsheet
+    <a href="/2021/08/28/2021-08-28-Makefile/" rel="prev" title="Makefile">
+      <i class="fa fa-chevron-left"></i> Makefile
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/01/29/2023-01-29-Hexo/" rel="next" title="Hexo">
-      Hexo <i class="fa fa-chevron-right"></i>
+    <a href="/2022/08/28/2022-11-14-GitHub/" rel="next" title="Github cheetsheet">
+      Github cheetsheet <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -289,6 +337,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Sklearn"><span class="nav-number">1.</span> <span class="nav-text">Sklearn</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Statsmodel"><span class="nav-number">2.</span> <span class="nav-text">Statsmodel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#H2O"><span class="nav-number">3.</span> <span class="nav-text">H2O</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#H2O4GPU"><span class="nav-number">4.</span> <span class="nav-text">H2O4GPU</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CVXPY"><span class="nav-number">5.</span> <span class="nav-text">CVXPY</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#glmnet"><span class="nav-number">6.</span> <span class="nav-text">glmnet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Not-support-LASSO"><span class="nav-number">7.</span> <span class="nav-text">Not support LASSO?</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
